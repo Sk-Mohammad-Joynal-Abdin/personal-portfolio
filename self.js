@@ -50,11 +50,12 @@ sr.reveal('.skills__data', { interval: 200 });
 sr.reveal('.skills__img', { delay: 600 });
 
 /*SCROLL WORK*/
-// sr.reveal('.work__img', { interval: 200 });
+sr.reveal('.work__img', { interval: 200 });
 
 /*SCROLL CONTACT*/
 // sr.reveal('.contact__input', { interval: 200 }); 
 const form = document.querySelector("form[name='contact-form']");
+const thankYou =doucment.querySelector(".thank-you");
 const nameInput = document.querySelector("input[name='name']");
 const emailInput = document.querySelector("input[name='email']");
 const phoneInput = document.querySelector("input[name='phone']");
@@ -102,7 +103,8 @@ form.addEventListener("submit", (e) => {
   shouldValidate = true;
   validateInputs();
   if (isFormValid) {
-    // TODO: DO AJAX REQUEST
+    form.remove();
+    thankYou.classList.remove("hidden");
   }
 });
 
