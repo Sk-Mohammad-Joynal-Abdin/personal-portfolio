@@ -100,7 +100,7 @@ const validateInputs = () => {
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  shouldValidate = true;
+//   shouldValidate = true;
   validateInputs();
   if (isFormValid) {
     form.remove();
