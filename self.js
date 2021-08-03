@@ -104,7 +104,7 @@ form.addEventListener("submit", (e) => {
   validateInputs();
   if (isFormValid) {
     form.remove();
-    thankYou.classList.remove("hidden");
+    thankyou.classList.remove("hidden");
   }
 });
 
