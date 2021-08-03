@@ -53,7 +53,7 @@ sr.reveal('.skills__img', { delay: 600 });
 sr.reveal('.work__img', { interval: 200 });
 
 /*SCROLL CONTACT*/
-sr.reveal('.contact__input', { interval: 200 }); 
+// sr.reveal('.contact__input', { interval: 200 }); 
 const form = document.querySelector("form[name='contact-form']");
 const nameInput = document.querySelector("input[name='name']");
 const emailInput = document.querySelector("input[name='email']");
